@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('galaksi.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  canvas {
+    display: block;
+    background: url('galaksi.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Nama Kelompok */
+  #teamName {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 9; /* Pastikan ini lebih kecil dari modal */
+  }
+  
+  /* Modal untuk Start Game */
+  #modalEl {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Modal muncul di atas nama kelompok */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Tombol Start Game */
+  #startGameBtn {
+    z-index: 11; /* Tombol Start Game di atas modal */
+    position: relative; /* Tombol berada di atas modal */
+  }
